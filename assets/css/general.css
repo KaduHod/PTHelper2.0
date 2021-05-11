@@ -1,0 +1,164 @@
+@media screen and (max-width:420px){
+    body{
+        width:100%;
+        height: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    #bcColor-all{
+        background-image: url('../img/all-bc.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 0px 0px;
+    }
+    header{
+        width: 100%;
+        height: 200px;/*TEMPORARIO*/
+        animation: opacity0 1s linear forwards;
+        background:linear-gradient(to bottom, #2c5364ee, #203A43, #0F2027);
+    }
+    main{
+        width: 100%;
+        height: fit-content;/*TEMPORARIO*/
+
+    }
+    section{
+        width: 100%;
+        height: fit-content;/*TEMPORARIO*/
+       
+    }
+    footer{
+        width: 100%;
+        height: 200px;/*TEMPORARIO*/
+        padding-top: 120px;
+        /* animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+        background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #240b36, #c31431);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #240b36, #c31431); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .container-botoes{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .con_select{
+        
+        display: flex;
+        color: white;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+    .resultado{
+        display: flex;
+        width:calc(100% - 10px);
+        height: fit-content;
+        margin: 0px 5px;
+        margin-bottom: 5px;
+        box-shadow: inset 0px -1px 3px black;
+        /* background: #076585;  /* fallback for old browsers 
+        background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 
+        background: linear-gradient(to right, #fff, #076585); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+       border-radius: 5px;
+    }
+    .resultado ul{
+        margin-bottom: 5px;
+        width: 100%;
+        color: white;
+        text-align:center;
+        height: fit-content;
+        overflow-y: scroll;     
+        font-size: 14px;   
+    }
+    .intro{
+        width:100%;
+        height: fit-content;/*TEMPORARIO*/
+        padding: 20px;
+    }
+    .intro-content-sec{
+        width: calc(90% - 20px);
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        border-left: 3px solid white;
+    }
+}
+.botao{
+    border-radius: 5px;
+    background: #43C6AC;  /* fallback for old browsers */
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fundo-claro{
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7b4, #7F7FD5b4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #91eae4ea, #86a8e7b4, #7F7FD5b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fundo-escuro{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background:linear-gradient(to bottom, #2c5364, #203a43, #0F2027);
+}
+.fundo-claro2{
+    background: #acb6e5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #86fde8b4, #acb6e5b4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #86fde8b4, #acb6e5b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+.fundo-escuro2{
+    background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #4CA1AF, #2C3Ee7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #4ca2af, #2C3Ee7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fundo-escuro3{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e6b, #302b636b, #0f0c296b);  /* Chrome 10-25, Safari 5.1-6 */
+    background:linear-gradient(to bottom, #2c53646b, #203A436b, #0F20276b);
+}
+.botao:hover{
+    animation: aperta-botao 200ms linear forwards;
+}
+.botao a{
+    text-decoration: none;
+    color: white;
+
+}
+.margin-top{
+    padding-top: 120px;
+}
+.flexR{
+    display: flex;
+}
+.flexC{
+    display: flex;
+    flex-direction: column;
+}
+.flexRCC{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.flexCCC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

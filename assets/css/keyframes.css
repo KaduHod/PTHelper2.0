@@ -1,0 +1,36 @@
+@keyframes move_top{
+    to{
+        padding-top: 0px;
+    }
+}
+@keyframes mais_altura{
+    to{
+        height:80%;
+        opacity: 1;
+    }
+}
+@keyframes opacity1{
+    to{
+        opacity: 1;
+    }
+}
+@keyframes aperta-botao{
+    50%{
+        width: 60%;
+        height: 35px;
+    }
+    100%{
+        width: 65%;
+        height:40px;
+    }
+}
+@keyframes aperta-botao2{
+    50%{
+        width: 43%;
+        height: 35px;
+    }
+    100%{
+        width: 45%;
+        height:40px;
+    }
+}

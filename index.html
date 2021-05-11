@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT HEPLER</title>
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/regioes.css">
+    <link rel="stylesheet" href="assets/css/block_els.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/introducao.css"> 
+    <link rel="stylesheet" href="assets/css/keyframes.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/exercicios_mpe.css">
+    <style>
+        *{
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            text-shadow: 0px 0px 1px black;
+        }
+        
+    </style>
+</head>
+
+
+<body class="flexC" onbeforeunload="load_top()" onload="inicia_slider()" onscroll="scroll_func(blocos_animacao_scroll)">
+    <div id="menu">
+        <div id="menu-container">
+            <div id="menu-links" onclick="esconde_menu()">
+                <a href="#regioes-corpo"  rel="noopener noreferrer" onclick="esconde_menu()">Regiões do corpo</a>
+                <a onclick="esconde_menu()" href="#exercicios"  rel="noopener noreferrer">Exercícios por musculo</a>
+                <a href="#musculo-porcao-exercicios" onclick="esconde_menu()" rel="noopener noreferrer">Exercícios por porção</a>
+            </div>
+            <div id='container_esconde_menu'>
+                <div id='seta_esconde_menu' onclick="esconde_menu()"></div>
+            </div>
+        </div>
+    </div>
+    <div id="bcColor-all" class="fundo-escuro3">
+        <!DOCTYPE html>   
+      <div id='block_container'><div id="seta" onclick="mostra_menu()"></div></div>  
+        <header id="header">
+            <div id="header-bcColor">
+                <div id="slider-options" class="abs" >
+                    <div id="slider-options-container" class="abs-flex">
+                        
+                    </div>
+                </div>
+                <h1>Personal Trainer Help</h1>
+                
+            </div>
+            
+        </header>
+        <main id="main">
+            <section id="introducao-site" class="fundo-claro">
+                
+                <div id="edf-tools" class="intro-content">
+                    <div id="edf-tools-descricao">
+                       <h5>Conheça também a minha ferramenta para cálculo de densidade e gordura corporal!</h5> 
+                    </div>
+                    <div id="edf-tools-link" class="botao">
+                        <a href="http://edftools.vercel.app/" target="_blank" rel="noopener noreferrer">EDF TOOLS</a> 
+                    </div>
+                </div>
+                <div class="bar"></div>
+                <div id="descricao-site" class="intro-content">
+                    <h1>Experimente um pouco do meu portifólio de exercícios para musculação.</h1>
+                </div>
+            </section>
+            <section id="regioes-corpo"  class="fundo-escuro">
+                <div id="regioes-corpo-intro" class="container-introdução-funcao">
+                    <div id="regieos-corpo-intro-container">
+                        <h1>Regiões</h1>
+                        <p>Lista de exercícios apartir das regiões do corpo</p>
+                    </div>
+                </div>
+                <div id="regioes-corpo-botoes" class="container-botoes">
+
+                </div>
+                <div id="regioes-corpo-resultado" class="resultado ">
+                    <ul id="lista-regioes" class="lista-funcao">
+                        <h1>Escolha uma das opçoes acima!</h1>
+                    </ul>
+                </div>
+            </section>
+            <section id="exercicios"  class="margin-top fundo-claro2">
+                <div id="exercicios-intro" class="intro">
+                    <div class="intro-content-sec">
+                        <h1>Exercícios por músculo</h1>
+                        <p>Escolha um músculo para visualizar os seus exercícios</p>
+                    </div>
+                </div>
+                <div id="exercicios-botoes" class="con_select">
+                    <!-- <div class="teste-envelope" id="01">
+                        <h1>Lista de músculos</h1>
+                        <div class="drop-down">
+                            <div class="drop-down-selected" onclick = "bota_options_drop_down('01','options-01')">
+                                clique em mim
+                            </div>
+                            
+                        </div>
+                    </div> -->
+                    <div class="drop-down-options" id="options-01">
+
+                    </div>
+                    
+                </div>
+                <div id="exercicioso-resultado" class="resultado">
+
+                </div>
+            </section>
+            <section id="musculo-porcao-exercicios"  class="margin-top fundo-escuro2">
+                <div id="musculo-porcao-exercicios-intro" class="intro">
+                    <div class="intro-content-sec">
+                        <h1>Porções por músculo</h1>
+                        <p>Escolha um músculo para visualizar as suas porções</p>
+                    </div>
+                </div>
+                <div id="musculo-porcao-exercicios-botoes" class="con_select">
+                    <!-- <div class="teste-envelope" id="02">
+                        <h1>Lista de músculos</h1>
+                        <div class="drop-down">
+                            <div class="drop-down-selected">
+                                clique em mim
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="drop-down-options" id='options-02'></div>
+                </div>
+                <div id="musculo-porcao-exercicios-resultado" class="resultado">
+
+                </div>
+            </section>
+        </main>
+        <footer  class="border margin-top" id="footer">
+            <p>footer </p>
+        </footer>
+    </div>
+    
+    <script src="assets/js/elementoshtml.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/musculos.js"></script>
+    <script src="assets/js/filtraMusculos.js"></script>
+    <script src="assets/js/inputsregioes.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/inputsexercicios_musculos_porcoes.js"></script>
+    
+    
+</body>
+</html>

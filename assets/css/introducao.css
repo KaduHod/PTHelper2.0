@@ -1,0 +1,54 @@
+@media screen and (max-width:420px){
+    #introducao-site{
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+    }
+    .bar{
+        width: 2px;
+        height: 0%;
+        opacity: 0;
+        content: '';
+        background-color: rgb(255, 255, 255);
+        animation: mais_altura 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1000ms forwards;
+    }
+    .intro-content{
+        width: calc(50% - 3px);
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #edf-tools-link{
+        margin-top: 25px;
+        width: 80%;
+        height: 30px;
+        font-size: 13px;
+        opacity: 0;
+        animation: opacity1 800ms 2500ms linear forwards;
+        
+    }
+    #edf-tolls-link:hover{
+        animation: aperta-botao 500ms linear forwards;
+        
+    }
+    #descricao-site{
+        opacity: 0;
+        animation: opacity1 1500ms 1500ms linear forwards;
+        font-size: 12px;
+    }
+    #edf-tools-descricao{
+        opacity: 0;
+        animation: opacity1 800ms 2000ms linear forwards;
+    }
+    
+    #edf-tools h5{
+        font-size: 12px;
+
+    }
+}
+
