@@ -19,20 +19,25 @@
 }
 .drop-down-options{
     content: '';
-    width: 100%;
+    width: 98%;
     height: 100%;
     content: '';
     margin: 0px 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
+    justify-content:space-between;
+    border:1px solid #86fde8;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px;
 }
 #exercicios-botoes{
     display: flex;
 }
 .option-drop-down{
-    border:1px solid rgb(219, 219, 219);
+    border:1px solid #86fde8;
+    padding: 1px 0px;
+    border-width: 0px 0px 1px 0px;
     width: 32%;
     font-size: 12px;
     height: 27px;
@@ -41,9 +46,15 @@
     align-items: center;
     text-align: center;
     transform: translateX(-520%);
-    color: black;
-    background: #ffffff;  /* fallback for old browsers */
+    color: rgb(255, 255, 255);  /* fallback for old browsers */
     animation: '';
+    transition: 100ms ;
+}
+.option-drop-down:hover{
+    border-bottom-width: 3px;
+    height: 23px;
+    font-size: 13px;
+    color:#86fde8;
 }
 @keyframes move-drop-down{
     to{

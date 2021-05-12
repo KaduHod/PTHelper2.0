@@ -41,7 +41,7 @@ serratilAnterior = {
     porcoes:{
             "Pronador do carpo":['Rosca Alternada','Rosca Alternada Polia'], 
             "Flexor do carpo":['Martelo com o punho halter','Martelo com o punho barra'], 
-            "Flexor ulnar do carpo":['Flexão de punho','Flexão de punho pronado sentado barra','Flexão de punho pronado sentado halter','Flexão de punho pronado em pé barra','Flexão de punho pronado em pé barra']
+            "Flexor ulnar do carpo":['Flexão de punho','Flexão de punho pronado sentado barra','Flexão de punho pronado sentado halter','Flexão de punho pronado em pé barra']
     }
 }
  Trapezio ={

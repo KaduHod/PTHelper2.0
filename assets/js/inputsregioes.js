@@ -53,7 +53,7 @@ function cria_lista_regioes(regiao,id_botao){
         bloco_result.appendChild(ul)       
     })
     //COntrole do scroll caso um dos elementos esteja mais alto
-        blocos_animacao_scroll[0].gatilho = 212
-        blocos_animacao_scroll[1].gatilho = 424
-        blocos_animacao_scroll[2].gatilho = 610
+        blocos_animacao_scroll[0].gatilho = 265
+        blocos_animacao_scroll[1].gatilho = 530
+        blocos_animacao_scroll[2].gatilho = 760
 }

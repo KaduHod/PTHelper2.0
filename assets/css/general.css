@@ -93,6 +93,23 @@ background: linear-gradient(to top, #240b36, #c31431); /* W3C, IE 10+/ Edge, Fir
         font-size: 14px;
         border-left: 3px solid white;
     }
+    .resultado2{
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        color:#fff;
+        text-align: center;
+
+    }
+    .resultado2 h1{
+        font-size: 1.5em;
+    }
+    .resultado2 li{
+        font-size: 14px;
+    }
 }
 .botao{
     border-radius: 5px;

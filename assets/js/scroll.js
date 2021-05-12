@@ -9,18 +9,20 @@ blocos_animacao_scroll = [
     // },
     {
         bloco: exercicios,
-        gatilho: 50,
-        active:true  
+        gatilho: 90,
+        active:true,
+        indice: 0  
     },
     {
         bloco: m_p_e,
-        gatilho: 210,
-        active:false,
+        gatilho: 320,
+        active:true,
+        indice:1
 
     },
     {
         bloco: footer,
-        gatilho: 420,
+        gatilho: 530,
         active: false
     }
 ]//arr de objetos com elementos da aniamção para o topo
@@ -32,7 +34,7 @@ function scroll_func(blocos_animacao){// função acionad pelo  scroll para os e
         if(scroll_pos_y> el.gatilho){
             el.bloco.style.animation = 'move_top 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards'            
             if(el.active == true){
-                bota_inputs_exercicios_musc()
+                bota_inputs_exercicios_musc(el.indice)
                 el.active = false
             }
         }
