@@ -9,20 +9,20 @@ blocos_animacao_scroll = [
     // },
     {
         bloco: exercicios,
-        gatilho: 90,
+        gatilho: 250,
         active:true,
         indice: 0  
     },
     {
         bloco: m_p_e,
-        gatilho: 320,
+        gatilho: 380,
         active:true,
         indice:1
 
     },
     {
         bloco: footer,
-        gatilho: 530,
+        gatilho: 630,
         active: false
     }
 ]//arr de objetos com elementos da aniamção para o topo

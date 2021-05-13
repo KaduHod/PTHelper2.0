@@ -110,6 +110,18 @@ background: linear-gradient(to top, #240b36, #c31431); /* W3C, IE 10+/ Edge, Fir
     .resultado2 li{
         font-size: 14px;
     }
+    .resultado3{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 5px;
+        color:#fff;
+        text-align: center;
+
+    }
+    
 }
 .botao{
     border-radius: 5px;

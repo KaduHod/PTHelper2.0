@@ -2,7 +2,7 @@ serratilAnterior = {
     nome: "Serrátil Anterior",
     regiao: ['Superior','Anterior'],
     porcoes: {
-                'areaAdicional': ['Depressão de ombro na barra fixa','Paralela tríceps com depressão de ombro','Depressão de ombro na paralela']
+                'Serrátil': ['Depressão de ombro na barra fixa','Paralela tríceps com depressão de ombro','Depressão de ombro na paralela']
             }
 }
  Ombro = {
@@ -106,7 +106,7 @@ serratilAnterior = {
     nome: 'Quadrado Lombar',
     regiao: ['Superior','Anterior'],
     porcoes:{
-        'areaAdicional': ['Stiff','Abd Superman','Extensão de tronco']
+        'Lombar': ['Stiff','Abd Superman','Extensão de tronco']
     }
 }
  Gluteo = {
