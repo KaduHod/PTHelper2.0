@@ -22,7 +22,7 @@ blocos_animacao_scroll = [
     },
     {
         bloco: footer,
-        gatilho: 630,
+        gatilho: 500,
         active: false
     }
 ]//arr de objetos com elementos da aniamção para o topo

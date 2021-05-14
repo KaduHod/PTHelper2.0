@@ -56,41 +56,45 @@
     font-size: 13px;
     color:#86fde8;
 }
-.result_container{
+.options_porcoes_container{
     display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: space-between;
-    border: 1px solid white;
+    width:100%;
+    height: 40px;
+    border: 1px solid red;
+}
+.porcao_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    transition: .5s;
+    font-size: 14px;
+}
+.porcao_option:hover{
+    border-bottom: 4px solid white;
+    font-size: 15px;
+}
+.tittle_porcao_option{
+    
+    font-weight: bolder;
+}
+.resultado_container{
+    display: flex;
+    height: 200px;
+    overflow-x: hidden;
 }
 .porcao{
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    margin: 0px 0px;
-    font-size: 12px;
-    border: 1px solid white;
-}
-.porcao h4{
-    font-weight: bolder;
-       
-}
-.subPorcaoContainer{
-    display: flex;
-    border-top: 1px solid white;
-    
-}
-.sub-porcao{
-    flex: 1;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex: 1;
+    background-color: white;
+    border: 1px solid green;
+    color: black;
     align-items: center;
     justify-content: center;
-    border-width: 0px 1px 0px 1px;
-    border: 1px solid white;
+
 }
+
 @keyframes move-drop-down{
     to{
         transform:translateX(0px) ;

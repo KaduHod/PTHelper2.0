@@ -50,52 +50,67 @@ function resultado_exercicios(musculo){
     
 }
 function resultado_musculos(indice){
-   let dados =  musculos_drop_down[indice]['Exercícios e porções do músculo']
-   let resultado = document.getElementById('musculo-porcao-exercicios-resultado')
-   while(resultado.childElementCount > 0 ){
-       resultado.childNodes.forEach(el=>{
-           resultado.removeChild(el)
-       })
-   }
-   let titulo = document.createElement('h1')
-   titulo.innerHTML = musculos_drop_down[indice].Nome
-   resultado.appendChild(titulo)
+    var resultado = document.getElementsByClassName('resultado3')[0]
+    //removo todo conteudo do resultado ao clicar na opção
+    while(resultado.childElementCount>0){resultado.childNodes.forEach(el=>{resultado.removeChild(el)})}
+    //console.log(musculos_drop_down[indice])
 
-   let result_container = document.createElement('div')
-   result_container.setAttribute('class','result_container')
-   resultado.appendChild(result_container)
-   
-    for(prop in dados){
-        if(prop != 'areaAdicional'){
-            let porcao = document.createElement('div')
-            porcao.setAttribute('class','porcao')
-            porcao.innerHTML = `<h4>${prop}<h4>`
-            result_container.appendChild(porcao)
-            if(Array.isArray(dados[prop])){
-                dados[prop].forEach(el=>{
-                    let exercicio = document.createElement('p')
-                    exercicio.innerHTML = "- "+el
-                    porcao.appendChild(exercicio)
-                })
-            }else{
-                let subPorcaoContainer = document.createElement('div')
-                subPorcaoContainer.setAttribute('class','subPorcaoContainer')
-                porcao.appendChild(subPorcaoContainer)
-                porcao.style.flex = '2'
-                for(subPor in dados[prop]){
-                    let subPorcao = document.createElement('div')
-                    subPorcao.setAttribute('class','sub-porcao')
-                    subPorcao.innerHTML = `<h4>${subPor}</h4>`
-                    subPorcaoContainer.appendChild(subPorcao)
-                    dados[prop][subPor].forEach(el=>{
-                        subPorcao.innerHTML += `<p>-${el}</p>`
-                    })
-                }
-                
-                    
-                
+    //crio div que tem o nome do músculo escolhido
+    let musculo_escolhido = document.createElement('h3')
+    musculo_escolhido.innerHTML = musculos_drop_down[indice]['Nome']
+    resultado.appendChild(musculo_escolhido)
+
+    // cria a div com as porcoes a serem vizualizadas / menu de porcoes
+        let options_porcoes_container = document.createElement('div')
+        options_porcoes_container.setAttribute('class','options_porcoes_container')
+        resultado.appendChild(options_porcoes_container)
+
+        //Adiciono as porcoes ao menu de porcoes
+        for(porcao in musculos_drop_down[indice]['Exercícios e porções do músculo']){
+            if(porcao != 'areaAdicional'){
+                let porcao_option = document.createElement('div')
+                porcao_option.setAttribute('class','porcao_option')
+                porcao_option.innerHTML = `<p class='tittle_porcao_option'>${porcao}</p>`
+                options_porcoes_container.appendChild(porcao_option)     
             }
         }
-    }
+    
+
+    //criar a div que contem as informações de subporcoes
+    let resultado_container = document.createElement('div')
+    resultado_container.setAttribute('class','resultado_container')
+    let largura = resultado.clientWidth*options_porcoes_container.childElementCount
+    resultado_container.style.width = `${largura}px`
+    resultado.appendChild(resultado_container)
+        cont = 0
+        //criar um bloco para porcao do musculo
+            for(porcao in musculos_drop_down[indice]['Exercícios e porções do músculo']){
+                if(porcao != 'areaAdicional'){
+                    let porcao_bloco = document.createElement('div')
+                    porcao_bloco.setAttribute('class','porcao')
+
+                    resultado_container.appendChild(porcao_bloco)
+                    porcao_bloco.innerHTML = porcao
+
+                    //boto a primeira porção na posição da tela
+                        if(cont == 0){
+                            let posicaoX_inicial = porcao_bloco.getBoundingClientRect().x * -1
+                            console.log(porcao_bloco.getBoundingClientRect())
+                            console.log(porcao_bloco)
+                            console.log(posicaoX_inicial)
+                            resultado_container.style.transform = `translateX(${posicaoX_inicial}px)`
+                        }
+                    cont++
+                }
+                
+                
+            }
+        
+        
+
+
+    
+    
 }
+
 
