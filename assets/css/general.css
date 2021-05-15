@@ -102,6 +102,7 @@ background: linear-gradient(to top, #240b36, #c31431); /* W3C, IE 10+/ Edge, Fir
         padding: 10px;
         color:#fff;
         text-align: center;
+        transition: 300ms;
 
     }
     .resultado2 h1{

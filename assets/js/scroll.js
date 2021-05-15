@@ -39,8 +39,8 @@ function scroll_func(blocos_animacao){// função acionad pelo  scroll para os e
             }
         }
         else{
-            el.bloco.style.animation = ''
-            el.bloco.style.paddingTop = '120px'
+            // el.bloco.style.animation = ''
+            // el.bloco.style.paddingTop = '120px'
         }     
         
         
