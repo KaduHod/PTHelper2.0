@@ -103,6 +103,9 @@ background: linear-gradient(to top, #240b36, #c31431); /* W3C, IE 10+/ Edge, Fir
         color:#fff;
         text-align: center;
         transition: 300ms;
+        background-image: url('../img/backgroundmep.png');
+        background-repeat:no-repeat;
+        background-position: center;
 
     }
     .resultado2 h1{
@@ -148,8 +151,8 @@ background: linear-gradient(to bottom, #91eae4ea, #86a8e7b4, #7F7FD5b4); /* W3C,
 }
 .fundo-claro2{
     background: #acb6e5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #86fde8b4, #acb6e5b4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #86fde8b4, #acb6e5b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #86fde7a4, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #86fde7a4, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 
 }

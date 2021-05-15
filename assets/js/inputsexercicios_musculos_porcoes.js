@@ -23,6 +23,8 @@ function bota_inputs_exercicios_musc(indice){
 }
 function resultado_exercicios(musculo){
     let resultado = document.getElementById('lista-exercicios')
+    resultado.style.animation = ''
+    resultado.style.transform = 'translateX(-350px)'
     let altura1 = resultado.clientHeight
     if(resultado.childElementCount > 0){
         while(resultado.childElementCount > 0){
@@ -45,8 +47,9 @@ function resultado_exercicios(musculo){
             
         }
     })
+    resultado.style.animation = 'ul 300ms cubic-bezier(0.175, 0.885, 0.32, 1.120) forwards'
     // console.log(blocos_animacao_scroll[0].gatilho) 
-    // console.log(resultado.clientHeight + "-" + altura1)
+    // console.log(resultado.clientHeight + "-" + altura1) ul.style.animation = ''
     
 }
 var posicaoX_inicial_parametro = null

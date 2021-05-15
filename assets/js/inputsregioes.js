@@ -28,16 +28,14 @@ function cria_lista_regioes(regiao,id_botao){
     }
     musculosReduceRegiao[regiao].forEach((el)=>{
         var ul = document.createElement('ul')
-        var ul_tittle = document.createElement('h2')
-        ul_tittle.style.textShadow = '0px 0px 3px black'
-        
+        var ul_tittle = document.createElement('h2')        
         
         ul.appendChild(ul_tittle)
+        ul.style.transform = 'translateX(350px)'
         musculo = arrMusculos.filter((ele)=>{
             if(ele.nome == el.nome){
                 return ele
             }
-            
         })
         
         ul_tittle.innerHTML = musculo[0].nome
@@ -50,7 +48,8 @@ function cria_lista_regioes(regiao,id_botao){
             exer.style.textShadow = '0px 0px 2px black'
         })
         bloco_result.style.height = '230px'
-        bloco_result.appendChild(ul)       
+        bloco_result.appendChild(ul)      
+        ul.style.animation = 'ul 300ms cubic-bezier(0.175, 0.885, 0.32, 1.120) forwards'
     })
     //COntrole do scroll caso um dos elementos esteja mais alto
         blocos_animacao_scroll[0].gatilho = 265

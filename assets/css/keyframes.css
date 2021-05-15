@@ -34,3 +34,8 @@
         height:40px;
     }
 }
+@keyframes ul{
+    to{
+        transform: translateX(0px);
+    }
+}
