@@ -1,0 +1,21 @@
+@media screen and (max-width:480px){
+    #footer-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        border: 1px solid red;
+        height: 90%;
+    }
+    a{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        width: 45%;
+
+    }
+
+}

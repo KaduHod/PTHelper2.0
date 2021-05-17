@@ -1,4 +1,4 @@
-@media screen and (max-width:420px){
+@media screen and (max-width:480px){
     #regioes-corpo{
         display: flex;
         flex-direction: column;
