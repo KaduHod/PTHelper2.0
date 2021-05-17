@@ -52,14 +52,7 @@
         color: rgb(59, 23, 23);
     }
 }
-#menu{
-    height: 0px;
-}
-#menu, #menu-container{
-    display: none;
-    visibility: hidden;
-    
-}
+
 @keyframes seta-volta-menu {
     50%{
         transform: translateY(15px);
