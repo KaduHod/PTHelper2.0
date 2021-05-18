@@ -1,4 +1,4 @@
-@media screen and (max-width:480px){
+/* @media screen and (max-width:480px){ */
     #menu{
         width: 100%;
         padding-top: 100px;
@@ -51,7 +51,7 @@
         text-decoration: underline;
         color: rgb(59, 23, 23);
     }
-}
+/* } */
 
 @keyframes seta-volta-menu {
     50%{

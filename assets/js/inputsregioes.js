@@ -31,6 +31,9 @@ function cria_lista_regioes(regiao,id_botao){
         var ul_tittle = document.createElement('h2')        
         
         ul.appendChild(ul_tittle)
+        if(window.screen.width>480){
+            ul.style.overflowY = 'hidden'
+        }
         ul.style.transform = 'translateX(350px)'
         musculo = arrMusculos.filter((ele)=>{
             if(ele.nome == el.nome){

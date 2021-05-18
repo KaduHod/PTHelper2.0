@@ -1,4 +1,4 @@
-@media screen and (max-width:480px){
+/* @media screen and (max-width:480px){ */
     #header-bcColor{
         height: calc(100% - 20px);
         padding: 10px 5px;
@@ -39,7 +39,7 @@
         color: rgba(255, 255, 255, 0);
     }
     
-}
+/* } */
 
 @keyframes mostra-por-cor{
     to{

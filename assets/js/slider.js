@@ -8,19 +8,18 @@ arrSlider = [
     {
         src:'url(assets/img/slider3.jpg)',
         pos:'-10px -10px',
+        pos2: '0px -250px'
     },
     {
         src:'url(assets/img/slider2.jpg)',
         pos:'-10px -50px',
+        pos2: '0px -150px'
     },
     {
         src:'url(assets/img/slider.jpg)',
         pos:'00px -200px',
-    },
-    {
-        src: 'url(assets/img/headerbc.webp)',
-        pos:'-5px 45px',
-    },
+        pos2: 'center'
+    }
     
 ]
 function inicia_slider(){
@@ -58,5 +57,9 @@ function slider(el){
 function  muda_slider(indice){
     let header = document.getElementById('header-bcColor')    
     header.style.backgroundImage = arrSlider[indice].src
-    header.style.backgroundPosition = arrSlider[indice].pos 
+    if(window.screen.width>480){
+        header.style.backgroundPosition = arrSlider[indice].pos2
+    }else{
+        header.style.backgroundPosition = arrSlider[indice].pos
+    }
 }

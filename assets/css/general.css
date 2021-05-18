@@ -1,4 +1,4 @@
-@media screen and (max-width:480px){
+/* @media screen and (max-width:480px){ */
     body{
         width:100%;
         height: 100%;
@@ -29,8 +29,8 @@
     }
     footer{
         width: 100%;
-        
-        padding-top: 120px;
+        padding-top: 10px;
+        padding: 20px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -125,7 +125,7 @@
 
     }
     
-}
+/* } */
 
 
 .botao{

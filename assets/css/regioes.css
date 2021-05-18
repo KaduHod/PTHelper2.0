@@ -1,4 +1,4 @@
-@media screen and (max-width:480px){
+/* @media screen and (max-width:480px){ */
     #regioes-corpo{
         display: flex;
         flex-direction: column;
@@ -51,4 +51,4 @@
     .regioes-botao:hover{
         animation: aperta-botao2 200ms linear forwards;
     }
-}
+/* } */
